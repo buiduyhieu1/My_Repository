@@ -1,0 +1,75 @@
+html, h1,h2,h3,ul,ol,li{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    vertical-align: baseline;
+    font-size: 100%;
+}
+
+body{
+    background-color: darkmagenta;
+}
+
+.page{
+    margin: 20px auto;
+    padding: 10px;
+    background-color: white;
+    width: 960px;
+}
+.header{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 200px;
+    background-color: coral;
+}
+
+#title1{
+    font-size: 3.0em;
+    color: brown;
+}
+
+.menuRowLeft{
+    margin: 5px 5px 0px 0px;
+    padding: 5px;
+    float: left;
+    width: 140px;
+    background-color: aqua;
+}
+
+.MainContent{
+    margin: 5px 0px 5px 0px;
+    padding: 0px;
+    float: right;
+    width: 800px;
+}
+
+.MainContent #content{
+    margin: 0px 5px 0px 0px;
+    padding:5px;
+    float: left;
+    width: 565px;
+    background-color: greenyellow;
+}
+
+.MainContent .menuRowRight{
+    margin: 0;
+    padding: 5px;
+    float: right;
+    min-width: 210px;
+    background-color: yellow;
+    min-height: 300px;
+}
+
+.footer{
+    margin: 0;
+    padding: 5px;
+    clear: both;
+    background-color: orangered;
+    min-height: 100px;
+}
+#Pfooter{
+    margin: 0;
+    padding: 0;
+}
+

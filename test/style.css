@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    vertical-align: baseline;
+    font-size: 100%;
+}
+
+body{
+    background-color: mediumaquamarine;
+    margin: 0px;
+    padding: 0px;
+}
+
+.page{
+    margin: 30px auto 70px auto;
+    border: 1px solid mediumaquamarine;
+    background-color: white;
+    width: 950px;
+}
+
+.Title{
+    margin: 0px 0px 1000px;
+    padding: 0px;
+}
+
+#imgTitle{
+    margin-bottom: 5px;
+}
+
+.MenuT{
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+}
+
+#menu, .item{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+#menu li{
+    float: left;
+    list-style-type: none;
+    margin-right: 1px;
+    position: relative;
+    width: 19%;
+    background-color: red;
+}
+
+#menu li a{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 5px;
+    width: 100%;
+}
+
+#menu .item{
+    display: none;
+    position: absolute;
+}
+
+#menu li:hover .item{
+    display: block;
+}
+
+#menu li a:hover{
+    background-color: brown;
+    color: gainsboro;
+}
+
+#menu li .item{
+    margin-top: 5px;
+}
+
+.item li{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

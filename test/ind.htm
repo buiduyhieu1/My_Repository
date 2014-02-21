@@ -1,0 +1,35 @@
+<html>
+<body>
+    <input type="button" value="Add row" onclick="addRow()">
+    <table id="tb" border="1" Cellspacing="0px" Cellpadding="5px">
+        <tr>
+            <td><div id="cel11">cell 11</div></td>
+            <td><div id="cel12">cell 12</div></td>
+            <td><div id="cel13"><input id="btnC1" type="button" value="Change" onclick="changeRow(1)"></div></td>
+        </tr>
+        <tr>
+            <td><div id="cel21">cell 21</div></td>
+            <td><div id="cel22">cell 22</div></td>
+            <td><div id="cel23"><input id="btnC2" type="button" value="Change"></div></td>
+        </tr>
+    </table>
+<script language="JavaScript">
+    row = 2;
+    function addRow(){
+        str = "<table id='tb' border='1' Cellspacing='0px' Cellpadding='5px'>";
+        row++;
+        for (i=1;i<=row;i++){
+            str+="<tr><td><div id='cel" +i+ "1'>cell " +i+ "1</div></td><td><div id='cel" +i+ "2'>cell " +i+ "2</div></td><td><div id='cel" +i+ "3'><input id='btnC" +i+ "' type='button' value='Change' onclick='changeRow(" +i+ ")'></div></td></tr>";
+        }
+        tb.innerHTML = str;
+    }
+    function changeRow(i){
+        if (i==1) {
+            cel11.innerHTML = "<input type='text' id='cel11' value='cell 11'>";
+            cel12.innerHTML = "<input type='text' id='cel12' value='cell 12'>";
+            cel13.innerHTML = "<input type='button' id='btnU1' value='Update'><input type='button' id='btnX1' value='Cancel'>"
+        }
+    }
+</script>
+</body>
+</html>
